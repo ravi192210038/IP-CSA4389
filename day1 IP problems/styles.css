@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.flag-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flag-container div {
+    height: 400px;
+    width: 80px;
+}
+
+.green {
+    background-color: green;
+}
+
+.white {
+    background-color: white;
+}
+
+.red {
+    background-color: red;
+}
