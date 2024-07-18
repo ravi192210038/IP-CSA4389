@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 80%;
+            height: 80%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-areas: 
+                "A B"
+                "C C";
+            grid-template-rows: auto auto;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+        .block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            color: white;
+            font-weight: bold;
+            height: 150px;
+        }
+        .block-a {
+            background-color: purple;
+            grid-area: A;
+        }
+        .block-b {
+            background-color: orange;
+            grid-area: B;
+        }
+        .block-c {
+            background-color: blue;
+            grid-area: C;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block block-a">A</div>
+        <div class="block block-b">B</div>
+        <div class="block block-c">C</div>
+    </div>
+</body>
+</html>

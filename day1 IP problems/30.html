@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Showroom</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "header header"
+                "left top"
+                "left right";
+            grid-template-rows: auto 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            width: 90%;
+            height: 90%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .header {
+            grid-area: header;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .left {
+            grid-area: left;
+            background-color: #e0e0e0;
+            padding: 10px;
+        }
+        .top {
+            grid-area: top;
+            background-color: #d0d0d0;
+            padding: 10px;
+            text-align: center;
+        }
+        .right {
+            grid-area: right;
+            background-color: #c0c0c0;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .bike-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .bike-brand {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">Bike Showroom</header>
+        <aside class="left">
+            <h2>Brands</h2>
+            <ul>
+                <li><a href="#brand1">Brand 1</a></li>
+                <li><a href="#brand2">Brand 2</a></li>
+                <li><a href="#brand3">Brand 3</a></li>
+                <li><a href="#brand4">Brand 4</a></li>
+            </ul>
+        </aside>
+        <div class="top" id="showroom-name">
+            <h2>Welcome to Our Showroom</h2>
+            <p>Your one-stop destination for premium bikes.</p>
+        </div>
+        <div class="right">
+            <div class="bike-brand" id="brand1">
+                <h3>Brand 1</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReLvSkj4FgbgQ3_Nw1V_3NW54OqJFa-9AoMA&s" alt="Brand 1 Bike" class="bike-image">
+                <p>Model: Speedster</p>
+                <p>Specifications: High-speed, lightweight, durable.</p>
+            </div>
+            <div class="bike-brand" id="brand2">
+                <h3>Brand 2</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmcCgo40bd4cvf54sRCZ-5QSjnap99x0thWA&s" alt="Brand 2 Bike" class="bike-image">
+                <p>Model: Cruiser</p>
+                <p>Specifications: Comfortable, stylish, smooth ride.</p>
+            </div>
+            <div class="bike-brand" id="brand3">
+                <h3>Brand 3</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqfyAwndfN0E2I38Y2UF6nCzCF6NfM_OFVVg&s" alt="Brand 3 Bike" class="bike-image">
+                <p>Model: Mountain</p>
+                <p>Specifications: Off-road, robust, high endurance.</p>
+            </div>
+            <div class="bike-brand" id="brand4">
+                <h3>Brand 4</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSotcOXZwyyZfCxVJRjUiK2o26PiaQZcSR7hA&s" alt="Brand 4 Bike" class="bike-image">
+                <p>Model: City</p>
+                <p>Specifications: Urban, compact, fuel-efficient.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
